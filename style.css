@@ -58,7 +58,17 @@ p { margin: 0 0 1rem; }
 .nav.is-scrolled { border-bottom-color: var(--line); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand__mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; background: var(--text); color: var(--bg); font: 600 13px var(--mono); }
+.brand__mark { width: 36px; height: 36px; flex: none; color: var(--text); overflow: visible; }
+.brand__mark path { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.brand__mark .arm-grip { stroke-width: 1.6; }
+.brand__mark .arm-joint { fill: var(--bg); stroke: currentColor; stroke-width: 1.8; }
+.brand__mark .arm-tip { fill: var(--accent); }
+.brand__mark .arm-j1, .brand__mark .arm-j2 { transform-box: view-box; transition: transform .6s cubic-bezier(.34, 1.4, .64, 1); }
+.brand__mark .arm-j1 { transform-origin: 12.5px 27.5px; }
+.brand__mark .arm-j2 { transform-origin: 19px 13px; }
+.brand:hover .arm-j1 { transform: rotate(-12deg); }
+.brand:hover .arm-j2 { transform: rotate(28deg); }
+@media (prefers-reduced-motion: reduce) { .brand__mark .arm-j1, .brand__mark .arm-j2 { transition: none; } }
 .brand__text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand__name { font-weight: 600; }
 .brand__role { font: 500 .68rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
