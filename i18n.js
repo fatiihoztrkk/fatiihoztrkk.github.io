@@ -51,7 +51,7 @@ const EN = {
   'st.4': 'B.Sc. GPA',
   'st.4b': 'out of 4.00 · ranked 3rd',
 
-  'ab.num': '01 / About',
+  'ab.num': 'About',
   'ab.h': 'Not in a single layer —<br>across the whole system.',
   'ab.p1': 'A machine only works when its mechanical, electronic and software layers are right at the same time. That is why, rather than specialising in a single field, I prefer to design the system as a whole and get the interfaces between those layers right.',
   'ab.p2': 'Over three years at the ASIL Lab I grew from undergraduate researcher to leading a 20-person team. In aerospace and medical-device internships I built embedded systems as part of real products, and in TÜBİTAK-funded research I worked with optical measurement systems and microfluidic chips.',
@@ -68,7 +68,7 @@ const EN = {
   'edu.lang': 'Languages',
   'edu.lang2': 'Turkish (native) · English (advanced)',
 
-  'sk.num': '02 / Skills',
+  'sk.num': 'Skills',
   'sk.h': 'Every layer of a mechatronic system',
   'sk.lead': 'From concept to working prototype: mechanical design, electronics, embedded software and the perception/decision layer.',
   'sk.1': 'Mechanical &amp; Manufacturing',
@@ -82,7 +82,7 @@ const EN = {
   'sk.4': 'AI &amp; Computer Vision',
   'sk.4p': 'Real-time image processing, object detection, deep learning.',
 
-  'ex.num': '03 / Experience',
+  'ex.num': 'Experience',
   'ex.h': 'From the lab to the field',
   'ex.a.d': 'Sep 2023 — Jul 2026',
   'ex.a.w': 'Istanbul · Robotics &amp; AI laboratory',
@@ -112,7 +112,7 @@ const EN = {
   'ex.t.2': 'Designed the architecture of a <strong>CAN bus data-transfer hub</strong> for an aerospace application, defining node topology and message routing.',
   'ex.t.3': 'Verified node-to-node communication and validated firmware on real hardware targets in the lab.',
 
-  'pr.num': '04 / Projects',
+  'pr.num': 'Projects',
   'pr.h': 'Selected engineering projects',
   'pr.play': 'Play the ARC-HIT system demo video',
   'pr.video': 'System demo video',
@@ -158,11 +158,11 @@ const EN = {
   'c.med': 'Medical imaging',
   'c.cls': 'Classification',
 
-  'pu.num': '05 / Publications',
+  'pu.num': 'Publications',
   'pu.h': 'Publications &amp; papers',
   'pu.conf': 'Conference',
 
-  'co.num': '06 / Contact',
+  'co.num': 'Contact',
   'co.h': 'Let’s build the next system together.',
   'co.p': 'Get in touch about roles, R&amp;D projects and academic collaborations in mechatronic systems, robotics, embedded systems and computer vision.',
   'ft.city': 'Istanbul',

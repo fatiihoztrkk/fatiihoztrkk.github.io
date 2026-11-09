@@ -8,7 +8,7 @@
   --muted: #5a6475;
   --line: #dce1e9;
   --accent: #0b63e5;
-  --accent-2: #00a3a3;
+  --accent-2: #0b63e5;
   --accent-soft: rgba(11, 99, 229, .09);
   --ok: #0f9d58;
   --grid: rgba(13, 19, 33, .055);
@@ -22,7 +22,7 @@
   :root:not([data-theme="light"]) {
     --bg: #090d14; --bg-alt: #0d121b; --surface: #111823; --surface-2: #0f151f;
     --text: #e7ecf4; --muted: #8b96a8; --line: #1f2937;
-    --accent: #4d94ff; --accent-2: #2dd4bf; --accent-soft: rgba(77,148,255,.12); --ok: #34d399;
+    --accent: #4d94ff; --accent-2: #4d94ff; --accent-soft: rgba(77,148,255,.12); --ok: #34d399;
     --grid: rgba(148,163,184,.065); --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px rgba(0,0,0,.4);
     color-scheme: dark;
   }
@@ -30,7 +30,7 @@
 :root[data-theme="dark"] {
   --bg: #090d14; --bg-alt: #0d121b; --surface: #111823; --surface-2: #0f151f;
   --text: #e7ecf4; --muted: #8b96a8; --line: #1f2937;
-  --accent: #4d94ff; --accent-2: #2dd4bf; --accent-soft: rgba(77,148,255,.12); --ok: #34d399;
+  --accent: #4d94ff; --accent-2: #4d94ff; --accent-soft: rgba(77,148,255,.12); --ok: #34d399;
   --grid: rgba(148,163,184,.065); --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px rgba(0,0,0,.4);
   color-scheme: dark;
 }
@@ -47,11 +47,11 @@ p { margin: 0 0 1rem; }
 .mono { font-family: var(--mono); }
 .muted { color: var(--muted); }
 .small { font-size: .875rem; }
-.accent { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.accent { color: var(--accent); }
 .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: #fff; padding: 8px 12px; border-radius: 8px; z-index: 100; }
 .skip:focus { left: 8px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-.progress { position: fixed; top: 0; left: 0; height: 2px; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); z-index: 60; }
+.progress { position: fixed; top: 0; left: 0; height: 2px; width: 0; background: var(--accent); z-index: 60; }
 
 /* ================= Nav ================= */
 .nav { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom: 1px solid transparent; transition: border-color .2s; }
@@ -95,7 +95,7 @@ p { margin: 0 0 1rem; }
   mask-image: radial-gradient(ellipse at 75% 35%, #000 0%, transparent 72%);
   -webkit-mask-image: radial-gradient(ellipse at 75% 35%, #000 0%, transparent 72%); }
 .hero__inner { position: relative; display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
-.eyebrow { display: inline-flex; align-items: center; gap: 8px; font: 500 .74rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .07em; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.eyebrow { display: block; font: 500 .9rem var(--sans); color: var(--muted); margin-bottom: 18px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 22%, transparent); animation: pulse 2.4s infinite; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--ok) 0%, transparent); } }
 .hero h1 { font-size: clamp(2rem, 3.8vw, 2.9rem); font-weight: 750; margin: 22px 0 20px; }
@@ -132,7 +132,7 @@ p { margin: 0 0 1rem; }
 .section--alt { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section__head { margin-bottom: 44px; max-width: 760px; }
 .section__head h2 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); font-weight: 700; }
-.section__num { display: inline-block; font: 500 .78rem var(--mono); color: var(--accent); margin-bottom: 14px; text-transform: uppercase; letter-spacing: .08em; }
+.section__num { display: inline-block; font: 600 .82rem var(--sans); color: var(--accent); margin-bottom: 12px; }
 .section__lead { color: var(--muted); font-size: 1.05rem; margin-top: 14px; }
 
 /* About */
