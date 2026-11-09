@@ -10,7 +10,6 @@ document.getElementById('themeToggle').addEventListener('click', () => {
     (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   const next = current === 'dark' ? 'light' : 'dark';
   root.dataset.theme = next;
-  try { localStorage.setItem('theme', next); } catch (e) {}
 });
 
 // Mobil menü
