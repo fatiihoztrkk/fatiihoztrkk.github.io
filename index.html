@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Fatih Öztürk — Mekatronik Mühendisi</title>
+  <meta name="description" data-i18n-attr="content:meta.desc" content="Fatih Öztürk — Mekatronik sistemlerde deneyimli mühendis. Sistem mimarisi, gömülü sistemler, robotik ve bilgisayarlı görü.">
+  <meta name="author" content="Fatih Öztürk">
+  <meta property="og:title" content="Fatih Öztürk — Mekatronik Mühendisi">
+  <meta property="og:description" content="Sistem mimarisini kurgulayan ve onu çalışır donanıma dönüştüren mekatronik mühendisi.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fatihozturk.net/">
+  <link rel="canonical" href="https://www.fatihozturk.net/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+  <script>
+    document.documentElement.classList.add('js');
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    (function () {
+      var q = new URLSearchParams(location.search).get('lang'), saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      var lang = (q === 'en' || q === 'tr') ? q : saved || ((navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+      window.__lang = lang;
+      if (lang === 'en') document.documentElement.classList.add('i18n-pending');
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fatih Öztürk",
+    "jobTitle": "Mekatronik Mühendisi",
+    "url": "https://www.fatihozturk.net/",
+    "alumniOf": "Yıldız Teknik Üniversitesi",
+    "sameAs": ["https://www.linkedin.com/in/fatiihozturk", "https://github.com/fatiihoztrkk"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" data-i18n-attr="aria-label:nav.home" aria-label="Fatih Öztürk — başa dön">
+        <span class="brand__mark" aria-hidden="true">FÖ</span>
+        <span class="brand__text">
+          <span class="brand__name">Fatih Öztürk</span>
+          <span class="brand__role" data-i18n="role">Mekatronik Mühendisi</span>
+        </span>
+      </a>
+      <nav class="nav__links" id="navLinks" data-i18n-attr="aria-label:nav.menu" aria-label="Ana menü">
+        <a href="#hakkimda" data-i18n="nav.about">Hakkımda</a>
+        <a href="#yetkinlikler" data-i18n="nav.skills">Yetkinlikler</a>
+        <a href="#deneyim" data-i18n="nav.exp">Deneyim</a>
+        <a href="#projeler" data-i18n="nav.projects">Projeler</a>
+        <a href="#yayinlar" data-i18n="nav.pubs">Yayınlar</a>
+        <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--sm btn--primary nav__cv" href="assets/Fatih_Ozturk_CV_tr.pdf" data-cv target="_blank" rel="noopener">CV</a>
+        <button class="icon-btn lang-btn" id="langToggle" aria-label="Switch to English" title="English / Türkçe"><span id="langLabel">EN</span></button>
+        <button class="icon-btn" id="themeToggle" data-i18n-attr="aria-label:theme" aria-label="Tema değiştir">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn nav__burger" id="menuToggle" data-i18n-attr="aria-label:menu" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">YTÜ Mekatronik · Yüksek Lisans devam ediyor</span></p>
+          <h1 data-i18n="hero.title">Sistem mimarisini kurgulayan ve onu <span class="accent">çalışır donanıma</span> dönüştüren mekatronik mühendisi.</h1>
+          <p class="lead" data-i18n="hero.lead">Mekanik, elektronik, gömülü yazılım ve yapay zekâ katmanlarını tek bir sistemde birleştiriyorum. TÜBİTAK destekli robotik bir test platformunun mimarisini tasarlayıp mekanikten yazılıma kadar tüm katmanlarını geliştirdim.</p>
+          <div class="hero__cta">
+            <a href="#projeler" class="btn btn--primary"><span data-i18n="hero.cta">Projeleri incele</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Fatih_Ozturk_CV_tr.pdf" data-cv class="btn btn--ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              <span data-i18n="hero.cv">CV'yi indir</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kapalı çevrim sistem diyagramı -->
+        <figure class="hero__diagram" data-i18n-attr="aria-label:dia.aria" aria-label="Kapalı çevrim mekatronik sistem diyagramı: kamera, görüntü işleme, kontrolcü, sürücü ve aktüatör">
+          <svg viewBox="0 0 420 340" role="img">
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" class="d-arrow"/>
+              </marker>
+            </defs>
+            <!-- katman etiketleri -->
+            <text x="20" y="28" class="d-layer" data-i18n="dia.l1">AI / GÖRÜ</text>
+            <text x="20" y="148" class="d-layer" data-i18n="dia.l2">GÖMÜLÜ</text>
+            <text x="20" y="268" class="d-layer" data-i18n="dia.l3">MEKANİK</text>
+            <line x1="20" y1="110" x2="400" y2="110" class="d-sep"/>
+            <line x1="20" y1="230" x2="400" y2="230" class="d-sep"/>
+
+            <!-- bloklar -->
+            <g class="d-block"><rect x="40" y="44" width="120" height="48" rx="8"/><text x="100" y="66" data-i18n="dia.cam">Kamera</text><text x="100" y="82" class="d-sub" data-i18n="dia.cam2">3× senkron</text></g>
+            <g class="d-block d-block--accent"><rect x="250" y="44" width="130" height="48" rx="8"/><text x="315" y="66" data-i18n="dia.vis">Görüntü İşleme</text><text x="315" y="82" class="d-sub" data-i18n="dia.vis2">hata vektörü</text></g>
+            <g class="d-block d-block--accent"><rect x="250" y="164" width="130" height="48" rx="8"/><text x="315" y="186" data-i18n="dia.ctl">Kontrolcü</text><text x="315" y="202" class="d-sub">STM32 · PID</text></g>
+            <g class="d-block"><rect x="40" y="164" width="120" height="48" rx="8"/><text x="100" y="186" data-i18n="dia.drv">Sürücü</text><text x="100" y="202" class="d-sub" data-i18n="dia.drv2">izole güç</text></g>
+            <g class="d-block"><rect x="40" y="284" width="120" height="44" rx="8"/><text x="100" y="304" data-i18n="dia.act">Aktüatör</text><text x="100" y="319" class="d-sub" data-i18n="dia.act2">nişan ekseni</text></g>
+            <g class="d-block"><rect x="250" y="284" width="130" height="44" rx="8"/><text x="315" y="304" data-i18n="dia.mech">Mekanizma</text><text x="315" y="319" class="d-sub" data-i18n="dia.mech2">çekme · bırakma</text></g>
+
+            <!-- akış -->
+            <path d="M160 68 H246" class="d-flow" marker-end="url(#arr)"/>
+            <path d="M315 92 V160" class="d-flow" marker-end="url(#arr)"/>
+            <path d="M250 188 H164" class="d-flow" marker-end="url(#arr)"/>
+            <path d="M100 212 V280" class="d-flow" marker-end="url(#arr)"/>
+            <path d="M160 306 H246" class="d-flow" marker-end="url(#arr)"/>
+            <!-- geri besleme -->
+            <path d="M380 306 H404 V20 H100 V40" class="d-feedback" marker-end="url(#arr)"/>
+            <text x="389" y="170" class="d-fb-label" transform="rotate(90 389 170)" data-i18n="dia.fb">görsel geri besleme</text>
+          </svg>
+          <figcaption data-i18n="dia.cap">ARC-HIT · kapalı çevrim mimari</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats">
+          <div><dt data-i18n="st.1">Araştırma deneyimi</dt><dd data-count="3">3</dd><span data-i18n="st.1b">yıl · ASIL Lab</span></div>
+          <div><dt data-i18n="st.2">Yönetilen ekip</dt><dd data-count="20">20</dd><span data-i18n="st.2b">kişilik araştırma ekibi</span></div>
+          <div><dt data-i18n="st.3">Yayın &amp; bildiri</dt><dd data-count="4">4</dd><span>MEKON · arXiv · medRxiv</span></div>
+          <div><dt data-i18n="st.4">Lisans derecesi</dt><dd>3.47</dd><span data-i18n="st.4b">GANO · bölüm 3.sü</span></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="hakkimda">
+      <div class="wrap about">
+        <div>
+          <header class="section__head">
+            <span class="section__num" data-i18n="ab.num">01 / Hakkımda</span>
+            <h2 data-i18n="ab.h">Tek bir katmanda değil,<br>sistemin bütününde çalışıyorum.</h2>
+          </header>
+          <div class="prose">
+            <p data-i18n="ab.p1">Bir makine ancak mekanik, elektronik ve yazılım katmanları aynı anda doğru olduğunda çalışır. Bu yüzden tek bir alanda uzmanlaşmak yerine sistemin bütününü tasarlamayı, katmanlar arasındaki arayüzleri doğru kurmayı tercih ediyorum.</p>
+            <p data-i18n="ab.p2">ASIL Laboratuvarı'nda geçirdiğim üç yılda araştırmacılıktan 20 kişilik ekibin liderliğine uzanan bir süreç yaşadım. Havacılık ve medikal cihaz alanlarındaki stajlarımda gömülü sistemleri gerçek ürünlerin parçası olarak geliştirdim; TÜBİTAK destekli araştırmalarda ise optik ölçüm sistemleri ve mikroakışkan çiplerle çalıştım.</p>
+          </div>
+        </div>
+
+        <aside class="edu" aria-label="Eğitim" data-i18n-attr="aria-label:edu.t">
+          <h3 class="edu__title" data-i18n="edu.t">Eğitim</h3>
+          <div class="edu__item">
+            <span class="edu__date" data-i18n="edu.ms.d">Eyl 2026 — Devam ediyor</span>
+            <strong data-i18n="edu.ms">Mekatronik Mühendisliği, Yüksek Lisans</strong>
+            <span class="muted" data-i18n="edu.ytu">Yıldız Teknik Üniversitesi</span>
+          </div>
+          <div class="edu__item">
+            <span class="edu__date" data-i18n="edu.bs.d">Mezuniyet · Tem 2026</span>
+            <strong data-i18n="edu.bs">Mekatronik Mühendisliği, Lisans</strong>
+            <span class="muted" data-i18n="edu.bs.u">Yıldız Teknik Üniversitesi · %100 İngilizce</span>
+            <ul class="badges">
+              <li data-i18n="edu.b1">GANO 3.47 / 4.00</li>
+              <li data-i18n="edu.b2">Bölüm üçüncüsü</li>
+              <li data-i18n="edu.b3">Onur öğrencisi</li>
+            </ul>
+          </div>
+          <div class="edu__item edu__item--lang">
+            <span class="edu__date" data-i18n="edu.lang">Diller</span>
+            <span data-i18n="edu.lang2">Türkçe (ana dil) · İngilizce (ileri)</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="yetkinlikler">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num" data-i18n="sk.num">02 / Yetkinlikler</span>
+          <h2 data-i18n="sk.h">Bir mekatronik sistemin her katmanı</h2>
+          <p class="section__lead" data-i18n="sk.lead">Kavramdan çalışan prototipe: mekanik tasarım, elektronik, gömülü yazılım ve algı/karar katmanı.</p>
+        </header>
+        <div class="layers">
+          <article class="layer reveal">
+            <div class="layer__head">
+              <span class="layer__idx">L1</span>
+              <div class="layer__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg></div>
+            </div>
+            <h3 data-i18n="sk.1">Mekanik &amp; Üretim</h3>
+            <p data-i18n="sk.1p">Mekanizma tasarımı, hassas konumlandırma, prototip imalatı.</p>
+            <ul class="chips"><li>SolidWorks</li><li>Fusion 360</li><li>CNC / CAM</li><li data-i18n="sk.3d">3B baskı</li></ul>
+          </article>
+          <article class="layer reveal">
+            <div class="layer__head">
+              <span class="layer__idx">L2</span>
+              <div class="layer__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div>
+            </div>
+            <h3 data-i18n="sk.2">Elektronik &amp; PCB</h3>
+            <p data-i18n="sk.2p">İzole güç hatları, motor sürme, gürültüye dayanıklı kart tasarımı.</p>
+            <ul class="chips"><li>KiCad</li><li>Proteus</li><li data-i18n="sk.pcb">PCB tasarımı</li><li>PLC</li></ul>
+          </article>
+          <article class="layer reveal">
+            <div class="layer__head">
+              <span class="layer__idx">L3</span>
+              <div class="layer__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div>
+            </div>
+            <h3 data-i18n="sk.3">Gömülü Sistemler &amp; Kontrol</h3>
+            <p data-i18n="sk.3p">Bare-metal yazılım, haberleşme mimarisi, kapalı çevrim kontrol.</p>
+            <ul class="chips"><li>STM32 (HAL / register)</li><li>C · C++</li><li>CAN Bus</li><li>ROS2</li><li>MATLAB / Simulink</li><li>Linux</li></ul>
+          </article>
+          <article class="layer reveal">
+            <div class="layer__head">
+              <span class="layer__idx">L4</span>
+              <div class="layer__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/></svg></div>
+            </div>
+            <h3 data-i18n="sk.4">Yapay Zekâ &amp; Bilgisayarlı Görü</h3>
+            <p data-i18n="sk.4p">Gerçek zamanlı görüntü işleme, nesne tespiti, derin öğrenme.</p>
+            <ul class="chips"><li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>YOLO</li><li>PyTorch</li><li>TensorFlow · Keras</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="deneyim">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num" data-i18n="ex.num">03 / Deneyim</span>
+          <h2 data-i18n="ex.h">Laboratuvardan sahaya</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="timeline__date" data-i18n="ex.a.d">Eyl 2023 — Tem 2026</div>
+            <div class="timeline__card">
+              <div class="timeline__top">
+                <div>
+                  <h3>Advanced Systems and Invention Laboratories (ASIL)</h3>
+                  <p class="timeline__where" data-i18n="ex.a.w">İstanbul · Robotik &amp; yapay zekâ laboratuvarı</p>
+                </div>
+                <span class="tag" data-i18n="ex.a.t">Araştırma</span>
+              </div>
+              <div class="roles">
+                <div><strong data-i18n="ex.a.r1">Lisans Öğrenci Ekip Lideri</strong><span data-i18n="ex.a.r1d">Tem 2025 — Tem 2026</span></div>
+                <div><strong data-i18n="ex.a.r2">Lisans Araştırmacı</strong><span data-i18n="ex.a.r2d">Eyl 2023 — Haz 2025</span></div>
+              </div>
+              <ul class="bullets">
+                <li data-i18n="ex.a.1">Multidisipliner bir robotik ve yapay zekâ laboratuvarında <strong>20 kişilik</strong> lisans araştırma ekibine liderlik ettim; yeni katılacak öğrencilerin seçim sürecini ve teknik eğitim planlarını yürüttüm.</li>
+                <li data-i18n="ex.a.2">Bitirme projem <strong>ARC-HIT</strong>'in sistem tasarımını proje lideri olarak baştan sona üstlendim.</li>
+                <li data-i18n="ex.a.3">Araştırma projelerinde makine öğrenmesi, derin öğrenme, CNN ve nesne tespiti (YOLO) uygulamaları geliştirdim.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="reveal">
+            <div class="timeline__date" data-i18n="ex.e.d">Oca 2026 — Şub 2026</div>
+            <div class="timeline__card">
+              <div class="timeline__top">
+                <div>
+                  <h3 data-i18n="ex.e.h">Enlighter Tıbbi Cihaz Teknolojileri</h3>
+                  <p class="timeline__where" data-i18n="ex.e.w">İstanbul · Ar-Ge Mühendisliği Stajyeri</p>
+                </div>
+                <span class="tag" data-i18n="ex.e.t">Medikal</span>
+              </div>
+              <ul class="bullets">
+                <li data-i18n="ex.e.1">Medikal cihaz kartlarının şirket içinde prototiplenmesini sağlayan <strong>CNC tabanlı PCB üretim makinesinin</strong> alt sistemlerini tasarladım.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="reveal">
+            <div class="timeline__date" data-i18n="ex.s.d">Ağu 2025 — Şub 2026</div>
+            <div class="timeline__card">
+              <div class="timeline__top">
+                <div>
+                  <h3>TÜBİTAK 2247-C STAR</h3>
+                  <p class="timeline__where" data-i18n="ex.s.w">Lisans Araştırmacısı</p>
+                </div>
+                <span class="tag" data-i18n="ex.s.t">Optik · Mikroakışkan</span>
+              </div>
+              <ul class="bullets">
+                <li data-i18n="ex.s.1"><strong>PDMS mikroakışkan çipler</strong> ürettim.</li>
+                <li data-i18n="ex.s.2">Hücre ve sferoid sertlik ölçümü için <strong>Michelson tabanlı faz kaydırmalı holografi</strong> sisteminin entegrasyonuna katkı sağladım.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="reveal">
+            <div class="timeline__date" data-i18n="ex.t.d">Tem 2025 — Ağu 2025</div>
+            <div class="timeline__card">
+              <div class="timeline__top">
+                <div>
+                  <h3 data-i18n="ex.t.h">TAAC Havacılık Teknolojileri</h3>
+                  <p class="timeline__where" data-i18n="ex.t.w">İstanbul · Gömülü Sistem Stajyeri</p>
+                </div>
+                <span class="tag" data-i18n="ex.t.t">Havacılık</span>
+              </div>
+              <ul class="bullets">
+                <li data-i18n="ex.t.1">STM32 üzerinde <strong>register seviyesinde bare-metal</strong> gömülü yazılım geliştirdim; düğümler arası şifreli veri aktarımı uyguladım.</li>
+                <li data-i18n="ex.t.2">Bir havacılık uygulaması için <strong>CAN tabanlı veri aktarım merkezinin</strong> mimarisini tasarladım; düğüm topolojisini ve mesaj yönlendirme yapısını belirledim.</li>
+                <li data-i18n="ex.t.3">Düğümler arası haberleşmeyi ve yazılımın gerçek hedefteki çalışmasını donanım üzerinde doğruladım.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section--alt" id="projeler">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num" data-i18n="pr.num">04 / Projeler</span>
+          <h2 data-i18n="pr.h">Seçili mühendislik projeleri</h2>
+        </header>
+
+        <!-- ARC-HIT (öne çıkan) -->
+        <article class="project project--featured reveal">
+          <div class="project__media">
+            <button class="video" data-yt="_PJG-gm4ZSM" data-i18n-attr="aria-label:pr.play" aria-label="ARC-HIT sistem demo videosunu oynat">
+              <img src="https://i.ytimg.com/vi/_PJG-gm4ZSM/hqdefault.jpg" alt="" loading="lazy">
+              <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="video__label" data-i18n="pr.video">Sistem demo videosu</span>
+            </button>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="tag" data-i18n="pr.feat">Öne çıkan</span>
+              <span class="project__date" data-i18n="pr.a.d">Eyl 2025 — Haz 2026</span>
+            </div>
+            <h3 data-i18n="pr.a.h">ARC-HIT — Otonom Robotik Okçuluk Test Platformu</h3>
+            <p class="project__kicker" data-i18n="pr.a.k">Bitirme Projesi · Ekip Lideri · TÜBİTAK 2209-B destekli</p>
+            <p data-i18n="pr.a.p">Ok balistiği testlerindeki insan faktörünü ortadan kaldırarak atışlar arası karşılaştırmayı tekrarlanabilir kılan robotik okçuluk platformu. Sistem mimarisini tasarladım ve mekanikten yazılıma tüm katmanlarını geliştirdim.</p>
+
+            <div class="spec">
+              <div><span data-i18n="pr.a.s1">Gereksinim</span><strong>≤ 80 mm</strong><small data-i18n="pr.a.s1b">grupman çapı @ 18 m</small></div>
+              <div><span data-i18n="pr.a.s2">Ölçülen</span><strong class="ok">42 mm</strong><small data-i18n="pr.a.s2b">150 atış ortalaması</small></div>
+              <div><span data-i18n="pr.a.s3">Çıktı</span><strong data-i18n="pr.a.s3a">Patent</strong><small data-i18n="pr.a.s3b">değerlendirme aşamasında</small></div>
+            </div>
+
+            <details class="more">
+              <summary data-i18n="pr.more">Mühendislik detayları</summary>
+              <dl class="detail-list">
+                <dt data-i18n="pr.a.e">Elektronik</dt>
+                <dd data-i18n="pr.a.e2">Üst seviye görüntü işlemeyi gerçek zamanlı hareket kontrolünden ayıran iki katmanlı mimari; motor gürültüsünü sensör ve mantık hatlarından yalıtan izole güç hatlı özel PCB.</dd>
+                <dt data-i18n="pr.a.c">Kontrol</dt>
+                <dd data-i18n="pr.a.c2">Görsel geri beslemeyle yönlendirilen nişan eksenlerinin kapalı çevrim konumlandırması; kontrollü yay çekme ve bırakma hareketleri simülasyonda modellenip ayarlandı.</dd>
+                <dt data-i18n="pr.a.al">Algoritma</dt>
+                <dd data-i18n="pr.a.al2">Hedef merkezini ve isabet noktasını açısal hata vektörü olarak çıkaran görüntü işleme hattı; otomatik atış grubu istatistikleri.</dd>
+                <dt data-i18n="pr.a.o">Çıktılar</dt>
+                <dd data-i18n="pr.a.o2">TÜBİTAK 2209-B desteği (Proje No: 1139B412503297). YTÜ Teknoloji Transfer Ofisi üzerinden fikri mülkiyet başvurusu; olumlu patent araştırması sonrası patent değerlendirmesi. Açısal konumlandırma mekanizması üzerine MEKON 2026 bildirisi.</dd>
+              </dl>
+              <p class="muted small" data-i18n="pr.a.adv">Danışman: Doç. Dr. Hüseyin Üvet · Yıldız Teknik Üniversitesi</p>
+            </details>
+
+            <ul class="chips"><li data-i18n="c.arch">Sistem mimarisi</li><li>PCB</li><li data-i18n="c.cl">Kapalı çevrim kontrol</li><li data-i18n="c.ip">Görüntü işleme</li><li data-i18n="c.sim">Simülasyon</li></ul>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <!-- Duruş analizi -->
+          <article class="card reveal">
+            <div class="card__art" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <g class="art-line">
+                  <!-- 3 kamera -->
+                  <rect x="30" y="30" width="26" height="16" rx="3"/><path d="M56 38 L140 80" class="art-ray"/>
+                  <rect x="147" y="10" width="26" height="16" rx="3"/><path d="M160 26 L160 60" class="art-ray"/>
+                  <rect x="264" y="30" width="26" height="16" rx="3"/><path d="M264 38 L180 80" class="art-ray"/>
+                  <!-- sporcu iskeleti -->
+                  <circle cx="160" cy="72" r="8"/>
+                  <path d="M160 80 V118 M160 90 L132 98 L110 94 M160 90 L190 92 M160 118 L146 148 M160 118 L174 148"/>
+                  <path d="M108 70 Q96 94 108 118" class="art-bow"/>
+                </g>
+                <g class="art-joint"><circle cx="160" cy="90" r="3"/><circle cx="132" cy="98" r="3"/><circle cx="190" cy="92" r="3"/><circle cx="160" cy="118" r="3"/><circle cx="146" cy="148" r="3"/><circle cx="174" cy="148" r="3"/></g>
+                <text x="198" y="104" class="art-text">θ = 87.4°</text>
+              </svg>
+            </div>
+            <div class="card__body">
+              <div class="project__meta"><span class="tag" data-i18n="pr.b.t">Bilgisayarlı görü</span><span class="project__date" data-i18n="pr.b.d">Ara 2024 — Haz 2025</span></div>
+              <h3 data-i18n="pr.b.h">Yapay Zekâ Tabanlı Sporcu Duruş Analiz Sistemi</h3>
+              <p data-i18n="pr.b.p">Okçulukta öznel kalan teknik değerlendirmeyi ölçülebilir hale getiren sistem. Üç senkron kameradan gelen görüntüyü çakıştırarak atış anındaki eklem açılarını çıkarıyor; sonuçları Unity'de 3B avatar üzerinde gösteriyor.</p>
+              <details class="more">
+                <summary data-i18n="pr.details">Detaylar</summary>
+                <ul class="bullets">
+                  <li data-i18n="pr.b.1">Üç kameralı MediaPipe tabanlı görüntü işleme hattı; tek kameranın göremediği derinlik bilgisi, ölçüm bırakma anına hizalı.</li>
+                  <li data-i18n="pr.b.2">2 m kamera aralığı ve 2,50 m yüksekliğe ulaşan teleskopik kamera platformu — SolidWorks'te tasarlandı ve üretildi.</li>
+                  <li data-i18n="pr.b.3">Açıları 3B avatar üzerine aktaran Unity arayüzü; antrenör atışları görsel olarak karşılaştırabiliyor.</li>
+                </ul>
+              </details>
+              <ul class="chips"><li>MediaPipe</li><li>Python</li><li>Unity</li><li>SolidWorks</li></ul>
+            </div>
+          </article>
+
+          <!-- TEKNOFEST -->
+          <article class="card reveal">
+            <div class="card__art" aria-hidden="true">
+              <svg viewBox="0 0 320 160">
+                <g class="art-line">
+                  <ellipse cx="110" cy="80" rx="52" ry="60"/>
+                  <path d="M110 22 V138 M70 50 Q110 70 150 50 M64 90 Q110 110 156 90"/>
+                </g>
+                <circle cx="132" cy="68" r="12" class="art-hit"/>
+                <rect x="118" y="54" width="28" height="28" class="art-box"/>
+                <g class="art-line">
+                  <rect x="200" y="40" width="20" height="80" rx="3"/><rect x="232" y="52" width="20" height="56" rx="3"/><rect x="264" y="66" width="20" height="28" rx="3"/>
+                  <path d="M162 80 H196 M220 80 H230 M252 80 H262"/>
+                </g>
+                <text x="198" y="140" class="art-text" data-i18n="pr.c.art">CNN → inme</text>
+              </svg>
+            </div>
+            <div class="card__body">
+              <div class="project__meta"><span class="tag" data-i18n="pr.c.t">Derin öğrenme</span><span class="project__date" data-i18n="pr.c.d">Şub 2025 — Ağu 2025</span></div>
+              <h3 data-i18n="pr.c.h">TEKNOFEST 2025 — Sağlıkta Yapay Zekâ</h3>
+              <p data-i18n="pr.c.p">Kontrastsız BT görüntülerinden iskemik ve hemorajik inme tespiti ile difüzyon MR verisinden inme başlangıç zamanı tahmini üzerine derin öğrenme modelleri geliştirdim.</p>
+              <ul class="chips"><li>Python</li><li>PyTorch</li><li data-i18n="c.med">Tıbbi görüntü</li><li data-i18n="c.cls">Sınıflandırma</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+    <section class="section" id="yayinlar">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num" data-i18n="pu.num">05 / Yayınlar</span>
+          <h2 data-i18n="pu.h">Yayınlar &amp; bildiriler</h2>
+        </header>
+        <ol class="pubs">
+          <li class="pub reveal">
+            <span class="pub__year">2026</span>
+            <div>
+              <h3>Design of a High-Precision Angular Positioning Mechanism</h3>
+              <p class="muted">MEKON Mechatronics Student Conference 2026</p>
+            </div>
+            <span class="pub__venue" data-i18n="pu.conf">Konferans</span>
+          </li>
+          <li class="pub reveal">
+            <span class="pub__year">2026</span>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2609.26322" target="_blank" rel="noopener">A Reference-Based Protocol for Assessing Image Displacement and Scale Stability <span aria-hidden="true">↗</span></a></h3>
+              <p class="muted">arXiv preprint</p>
+            </div>
+            <span class="pub__venue" lang="en">arXiv</span>
+          </li>
+          <li class="pub reveal">
+            <span class="pub__year">2025</span>
+            <div>
+              <h3><a href="https://www.medrxiv.org/content/10.1101/2025.11.25.25340941v1" target="_blank" rel="noopener">Classification of Normal and Abnormal Heartbeats via R-Peak-Based Segmentation of ECG Signals <span aria-hidden="true">↗</span></a></h3>
+              <p class="muted">medRxiv preprint</p>
+            </div>
+            <span class="pub__venue" lang="en">medRxiv</span>
+          </li>
+          <li class="pub reveal">
+            <span class="pub__year">2024</span>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2408.16800" target="_blank" rel="noopener">CNN-Based Detection of Cardiovascular Diseases from ECG Images <span aria-hidden="true">↗</span></a></h3>
+              <p class="muted">arXiv preprint</p>
+            </div>
+            <span class="pub__venue" lang="en">arXiv</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="iletisim">
+      <div class="wrap">
+        <div class="contact__card">
+          <div class="hero__grid" aria-hidden="true"></div>
+          <div class="contact__inner">
+            <span class="section__num" data-i18n="co.num">06 / İletişim</span>
+            <h2 data-i18n="co.h">Bir sonraki sistemi birlikte inşa edelim.</h2>
+            <p class="lead" data-i18n="co.p">Mekatronik sistemler, robotik, gömülü sistemler ve bilgisayarlı görü alanlarındaki iş fırsatları, Ar-Ge projeleri ve akademik iş birlikleri için ulaşabilirsiniz.</p>
+            <a class="contact__mail" href="mailto:fatiihoztrkk@hotmail.com">fatiihoztrkk@hotmail.com</a>
+            <div class="contact__links">
+              <a class="btn btn--primary" href="https://www.linkedin.com/in/fatiihozturk" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.95 1.32-1.95 2.7V21h-4z"/></svg>
+                LinkedIn
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/fatiihoztrkk" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.7.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a class="btn btn--ghost" href="assets/Fatih_Ozturk_CV_tr.pdf" data-cv target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+                CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year"></span> Fatih Öztürk · <span data-i18n="ft.city">İstanbul</span></span>
+      <span class="mono" data-i18n="ft.tag">Mekanik · Elektronik · Gömülü · Yapay Zekâ</span>
+    </div>
+  </footer>
+
+  <script src="i18n.js?v=4"></script>
+  <script src="main.js?v=4"></script>
+</body>
+</html>
